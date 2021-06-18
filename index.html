@@ -15,42 +15,40 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header section-center">
-        <div class="mobile-nav-wrapper">
-          <a href="#" class="logo">Fiber</a>
-          <button class="hamburguer">
-            <img
-              src="./assets/Hamburger Menu.svg"
-              alt="Open navigation menu"
-              class="svg svg--hamburguer"
-            />
-          </button>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__left-items">
-            <li class="nav__item">
-              <a href="#">Community</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Pricing</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Features</a>
-            </li>
-          </ul>
-
-          <ul class="nav__right-items">
-            <li>
-              <a href="" class="btn btn--white clr-black">Sign In</a>
-            </li>
-            <li>
-              <a href="" class="btn">Sign Up</a>
-            </li>
-          </ul>
-        </nav>
+    <header class="header section-center">
+      <div class="mobile-nav-wrapper flex">
+        <a href="#" class="logo">Fiber</a>
+        <button class="hamburguer">
+          <img
+            src="./assets/Hamburger Menu.svg"
+            alt="Open navigation menu"
+            class="svg svg--hamburguer"
+          />
+        </button>
       </div>
+
+      <nav class="nav">
+        <ul class="nav__left-items flex">
+          <li class="nav__item">
+            <a href="#">Community</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Features</a>
+          </li>
+        </ul>
+
+        <ul class="nav__right-items flex">
+          <li>
+            <a href="" class="btn btn--white clr-black">Sign In</a>
+          </li>
+          <li>
+            <a href="" class="btn">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="section--hero section-center">
@@ -85,12 +83,12 @@
           <a href="#" class="stylized-link">View Examples</a>
         </div>
         <!--  -->
-        <div class="flex flex--column">
-          <div class="flex__item">
+        <div class="checks flex flex--column">
+          <div class="checks__item flex">
             <img src="./assets/Checkmark.svg" alt="" class="svg svg--check" />
             <p>No Credit Card required</p>
           </div>
-          <div class="flex__item">
+          <div class="checks__item flex">
             <img src="./assets/Checkmark.svg" alt="" class="svg svg--check" />
             <p>10 Free templates</p>
           </div>
@@ -135,7 +133,7 @@
     </section>
 
     <section class="section--free-trial section-center flex">
-      <div class="flex flex--column">
+      <div class="section--free-trial__info flex flex--column">
         <h2>Diversify your portfolio.</h2>
         <p>
           Create an even more impressive portfolio by creating case studies for
@@ -228,7 +226,7 @@
       </div>
     </section>
     <!--  -->
-    <footer class="footer section-center">
+    <footer class="footer section-center flex">
       <div class="footer__item flex flex--column">
         <h6 class="footer__fiber">Fiber</h6>
         <p>
@@ -247,7 +245,6 @@
           <li><a href="">Features</a></li>
         </ul>
       </div>
-
       <div class="footer__item flex flex--column">
         <h6>Resources</h6>
         <ul>
@@ -256,7 +253,6 @@
           <li><a href="">FAQ</a></li>
         </ul>
       </div>
-
       <div class="footer__item flex flex--column">
         <h6>Company</h6>
         <ul>
@@ -265,7 +261,6 @@
           <li><a href="">Blog</a></li>
         </ul>
       </div>
-
       <div class="footer__item flex flex--column">
         <h6>Sitemap</h6>
         <ul>
