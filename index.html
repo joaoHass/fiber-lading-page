@@ -20,7 +20,7 @@
         <a href="#" class="logo">Fiber</a>
         <button class="hamburguer">
           <img
-            src="./assets/Hamburger Menu.svg"
+            src="./assets/hamburguer.svg"
             alt="Open navigation menu"
             class="svg svg--hamburguer"
           />
@@ -51,10 +51,20 @@
       </nav>
     </header>
 
+    <a id="top" href="#"></a>
+
     <section class="section--hero section-center">
       <div class="section--hero__img-wrapper">
         <img
-          src="./assets/hero-Illustration.png"
+          srcset="
+            ./assets/hero-illustration-sm.png  482w,
+            ./assets/hero-illustration-md.png  771w,
+            ./assets/hero-illustration.png    2474w
+          "
+          sizes="(max-width: 600px) 482px,
+          (max-width: 900px) 771px,
+          2474px"
+          src="./assets/hero-illustration.png"
           alt=""
           class="svg section--hero__img"
         />
@@ -85,11 +95,11 @@
         <!--  -->
         <div class="checks flex flex--column">
           <div class="checks__item flex">
-            <img src="./assets/Checkmark.svg" alt="" class="svg svg--check" />
+            <img src="./assets/checkmark.svg" alt="" class="svg svg--check" />
             <p>No Credit Card required</p>
           </div>
           <div class="checks__item flex">
-            <img src="./assets/Checkmark.svg" alt="" class="svg svg--check" />
+            <img src="./assets/checkmark.svg" alt="" class="svg svg--check" />
             <p>10 Free templates</p>
           </div>
         </div>
@@ -102,7 +112,7 @@
       <h3>A good portfolio means good employability</h3>
     </section>
 
-    <section class="section section--cards section-center">
+    <section id="features" class="section section--cards section-center">
       <!-- card -->
       <div class="card">
         <img src="./assets/time.svg" alt="" class="svg svg--card" />
@@ -123,7 +133,7 @@
       </div>
       <!-- card -->
       <div class="card">
-        <img src="./assets/allSizes.svg" alt="" class="svg svg--card" />
+        <img src="./assets/all-sizes.svg" alt="" class="svg svg--card" />
         <h4>Responsive</h4>
         <p>
           All Fiber templates are fully responsive to ensure the experience is
@@ -142,17 +152,26 @@
         <a href="#" class="btn btn--white clr-purple">Start Free Trial</a>
       </div>
       <img
-        src="./assets/Page Image.png"
-        alt="An example design made with Fiber, showing it's simplicity and yet beautifulness"
+        srcset="
+          ./assets/page-image-sm.png  482w,
+          ./assets/page-image-md.png  771w,
+          ./assets/page-image.png    2308w
+        "
+        sizes="(max-width: 600px) 482px,
+          (max-width: 900px) 771px,
+          2308px"
+        src="./assets/page-image.png"
+        alt=""
+        class="svg section--hero__img"
       />
     </section>
 
-    <section class="section--testimonials section-center">
+    <section id="testimonials" class="section--testimonials section-center">
       <!-- testimonial -->
       <div class="testimonial">
         <div class="testimonial__person-info flex">
           <img
-            src="./assets/User Avatar.svg"
+            src="./assets/user-avatar.svg"
             alt="A picture of Sarah"
             class="svg svg--avatar"
           />
@@ -176,7 +195,7 @@
       <div class="testimonial">
         <div class="testimonial__person-info flex">
           <img
-            src="./assets/User Avatar 2.svg"
+            src="./assets/user-avatar-2.svg"
             alt="A picture of Mathew"
             class="svg svg--avatar"
           />
@@ -202,7 +221,7 @@
       <div class="testimonial">
         <div class="testimonial__person-info flex">
           <img
-            src="./assets/User Avatar 32.svg"
+            src="./assets/user-avatar-3.svg"
             alt="A picture of janice"
             class="svg svg--avatar"
           />
@@ -239,34 +258,34 @@
       <div class="footer__item flex flex--column">
         <h6>Sitemap</h6>
         <ul>
-          <li><a href="">Homepage</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Features</a></li>
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#features">Features</a></li>
         </ul>
       </div>
       <div class="footer__item flex flex--column">
         <h6>Resources</h6>
         <ul>
-          <li><a href="">Support</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
       </div>
       <div class="footer__item flex flex--column">
         <h6>Company</h6>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Customers</a></li>
-          <li><a href="">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </div>
       <div class="footer__item flex flex--column">
         <h6>Sitemap</h6>
         <ul>
-          <li><a href="">Sarah Andrews</a></li>
-          <li><a href="">Mathew Higgins</a></li>
-          <li><a href="">Janice Dave</a></li>
+          <li><a href="#">Sarah Andrews</a></li>
+          <li><a href="#">Mathew Higgins</a></li>
+          <li><a href="#">Janice Dave</a></li>
         </ul>
       </div>
     </footer>
