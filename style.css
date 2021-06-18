@@ -43,6 +43,22 @@ button {
   border: none;
 }
 
+label {
+  display: block;
+  font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+
 h1,
 h2,
 h3,
@@ -56,6 +72,11 @@ h6 {
 
 h1 {
   font-weight: 800;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: clamp(2rem, 1.5098rem + 2.0915vw, 3rem);
 }
 
 li {
@@ -149,7 +170,7 @@ p {
 }
 
 .logo {
-  font-size: clamp(1.5rem, 10vw, 2.5rem);
+  font-size: clamp(1.5rem, 1.125rem + 1.6667vw, 2rem);
   font-weight: 800;
   color: var(--clr-black);
 }
@@ -279,11 +300,6 @@ p {
   font-weight: 700;
   color: var(--clr-purple);
   margin-bottom: 0.75em;
-}
-
-.section--why-fiber h3 {
-  font-weight: 700;
-  font-size: clamp(2rem, 1.5098rem + 2.0915vw, 3rem);
 }
 
 /* CARDS */
@@ -562,4 +578,27 @@ p {
     width: 30%;
     margin-right: auto;
   }
+}
+
+/* // SIGN UP PAGE // */
+
+.signup-wrapper {
+  margin-top: 2em;
+  justify-content: center;
+}
+
+.section--login-form {
+  flex-grow: 1;
+}
+
+.section--login-aside {
+  background: var(--clr-purple);
+}
+
+.aside-wrapper {
+  height: 50%;
+}
+
+.section--login-aside {
+  display: none;
 }

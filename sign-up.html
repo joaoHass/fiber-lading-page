@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiber - Sign Up</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header section-center">
+      <a title="Redirects to the main page" href="./index.html" class="logo"
+        >Fiber</a
+      >
+    </header>
+
+    <div class="signup-wrapper section-center flex">
+      <section class="section--login-form section-center">
+        <h3>Create your Fiber account</h3>
+
+        <form action="">
+          <div id="user">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="John Doe" />
+          </div>
+
+          <div id="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="john@example.com" />
+          </div>
+
+          <div id="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="At least 8 characters"
+            />
+          </div>
+
+          <div id="terms">
+            <input type="checkbox" name="terms" />
+            <label for="terms"
+              >By creating an account on Fiber, you agree to the
+              <a href="#" class="stylized-link">Terms & Conditions</a></label
+            >
+          </div>
+          <input class="btn" type="submit" value="Create Fiber Account" />
+        </form>
+      </section>
+
+      <aside class="section--login-aside">
+        <div class="aside-wrapper flex flex--column">
+          <img
+            srcset="
+              ./assets/sign-up-image.png     482w,
+              ./assets/sign-up-image-md.png  771w,
+              ./assets/sign-up-image.png    2128w
+            "
+            sizes="(max-width: 600px) 482px,
+            (max-width: 900px) 771px,
+            2128px"
+            src="./assets/sign-up-image.png"
+            alt=""
+            class="aside__img"
+          />
+          <div class="section--login-aside__info">
+            <h4>Unparalleled Templates</h4>
+            <p>
+              Crafted by a team of professional designers, our templates are
+              unparalleled in the mark.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
