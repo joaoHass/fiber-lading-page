@@ -15,71 +15,87 @@
     />
   </head>
   <body>
-    <header class="header section-center">
-      <a title="Redirects to the main page" href="./index.html" class="logo"
-        >Fiber</a
-      >
-    </header>
+    <section class="signup-wrapper flex">
+      <article class="section-login-form-wrapper flex">
+        <div class="section-login-form section-center flex flex--column">
+          <a class="logo" href="">Fiber</a>
+          <h3 class="section-login-form__header">Create your Fiber account</h3>
 
-    <div class="signup-wrapper section-center flex">
-      <section class="section--login-form section-center">
-        <h3>Create your Fiber account</h3>
+          <form class="login-form" action="">
+            <div class="login-form__text" id="user">
+              <label class="form-label" for="name">Your Name</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="login-form__text" id="email">
+              <label class="form-label" for="email">E-mail</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="login-form__text" id="password">
+              <label class="form-label" for="password">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                name="password"
+                placeholder="At least 8 characters"
+                required
+              />
+            </div>
+            <div class="terms-wrapper flex" id="terms">
+              <input
+                class="form-control--checkbox"
+                type="checkbox"
+                name="terms"
+                required
+              />
+              <label class="form-label--terms" for="terms"
+                >By creating an account on Fiber, you agree to the
+                <a href="#" class="stylized-link fw-600">Terms & Conditions</a>.
+              </label>
+            </div>
+            <input class="btn" type="submit" value="Create Fiber Account" />
+          </form>
+          <p>Already have an account? <a href="index.html">Sign in</a></p>
+        </div>
+      </article>
 
-        <form action="">
-          <div id="user">
-            <label for="name">Your Name</label>
-            <input type="text" name="name" placeholder="John Doe" />
-          </div>
-
-          <div id="email">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="john@example.com" />
-          </div>
-
-          <div id="password">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              placeholder="At least 8 characters"
+      <aside class="section-login-aside-wrapper flex">
+        <div class="section-login-aside section-center flex flex--column">
+          <div class="aside-img-wrapper flex flex--column">
+            <img
+              srcset="
+                ./assets/sign-up-image.png     482w,
+                ./assets/sign-up-image-md.png  771w,
+                ./assets/sign-up-image.png    2128w
+              "
+              sizes="(max-width: 600px) 482px,
+              (max-width: 900px) 771px,
+              2128px"
+              src="./assets/sign-up-image.png"
+              alt=""
+              class="aside__img"
             />
-          </div>
-
-          <div id="terms">
-            <input type="checkbox" name="terms" />
-            <label for="terms"
-              >By creating an account on Fiber, you agree to the
-              <a href="#" class="stylized-link">Terms & Conditions</a></label
-            >
-          </div>
-          <input class="btn" type="submit" value="Create Fiber Account" />
-        </form>
-      </section>
-
-      <aside class="section--login-aside">
-        <div class="aside-wrapper flex flex--column">
-          <img
-            srcset="
-              ./assets/sign-up-image.png     482w,
-              ./assets/sign-up-image-md.png  771w,
-              ./assets/sign-up-image.png    2128w
-            "
-            sizes="(max-width: 600px) 482px,
-            (max-width: 900px) 771px,
-            2128px"
-            src="./assets/sign-up-image.png"
-            alt=""
-            class="aside__img"
-          />
-          <div class="section--login-aside__info">
-            <h4>Unparalleled Templates</h4>
-            <p>
-              Crafted by a team of professional designers, our templates are
-              unparalleled in the mark.
-            </p>
+            <div class="section-login-aside__info flex flex--column">
+              <h4>Unparalleled Templates</h4>
+              <p>
+                Crafted by a team of professional designers, our templates are
+                unparalleled in the mark.
+              </p>
+            </div>
           </div>
         </div>
       </aside>
-    </div>
+    </section>
   </body>
 </html>
