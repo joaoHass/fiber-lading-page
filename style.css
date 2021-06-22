@@ -17,11 +17,11 @@
 
   --ff-inter: "Inter", sans-serif;
 
-  --radius-lgt: 4px;
-  --radius: 8px;
+  --radius-lgt: 0.25em;
+  --radius: 0.5em;
 
-  --box-shadow-lgt: rgba(0, 0, 0, 0.05) 0px 3px 3px 0px;
-  --box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  --box-shadow-lgt: rgba(0, 0, 0, 0.05) 0px 0.1875em 0.1875em 0px;
+  --box-shadow: rgba(0, 0, 0, 0.15) 0px 0.1875em 0.1875em 0px;
   --transition: 0.25s all ease;
 }
 
@@ -103,7 +103,7 @@ a:hover:not(.logo),
 li:focus,
 a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px var(--clr-purple);
+  box-shadow: 0 0 0 0.1875em var(--clr-purple);
 }
 
 a {
@@ -119,7 +119,7 @@ p {
 }
 
 .section-center {
-  width: min(85%, 1140px);
+  width: min(85%, 71.25rem);
   margin: 0 auto;
 }
 
@@ -146,7 +146,7 @@ p {
 
 .btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(14, 15, 15, 0.829);
+  box-shadow: 0 0 0 0.1875em rgba(14, 15, 15, 0.829);
 }
 
 .btn--white {
@@ -168,7 +168,7 @@ p {
 .stylized-link {
   font-weight: 800;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 0.125em;
   color: var(--clr-purple);
 }
 
@@ -242,7 +242,7 @@ p {
 
 .nav__right-items a {
   font-size: 1.125rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.1875em 0.1875em 0px;
   width: 100%;
 }
 
@@ -391,7 +391,7 @@ p {
 
 .testimonial {
   padding: 1.125em;
-  border: 1px var(--clr-lgt-gray) solid;
+  border: 0.0625em var(--clr-lgt-gray) solid;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -408,13 +408,13 @@ p {
 .testimonial .btn {
   width: 100%;
   font-weight: 700;
-  border: 1px var(--clr-lgt-gray) solid;
+  border: 0.0625em var(--clr-lgt-gray) solid;
   border-radius: var(--radius);
   margin-top: 0.6em;
 }
 
 .testimonial .btn:hover {
-  border: 1px var(--clr-lgt-purple) solid;
+  border: 0.0625em var(--clr-lgt-purple) solid;
 }
 
 .testimonial__person-info {
@@ -481,7 +481,7 @@ p {
   color: var(--clr-gray);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .checks {
     display: flex;
     flex-direction: row;
@@ -494,7 +494,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .section-hero {
     margin-top: 5em;
     flex-direction: row-reverse;
@@ -552,7 +552,7 @@ p {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25rem) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -596,7 +596,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   /* change first foot's item width */
   .footer .footer__item:nth-child(1) {
     width: 30%;
@@ -623,7 +623,7 @@ p {
 
 .section-login-form-wrapper,
 .section-login-aside-wrapper {
-  width: min(85%, 75rem);
+  width: min(85%, 71.25rem);
   align-items: center;
 }
 
@@ -725,9 +725,8 @@ p {
   width: 50%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25rem) {
   .section-login-form {
-    /* padding: 60px clamp(4.4rem, 6.3vw, 150rem) 100px; */
     width: 70%;
     align-self: center;
   }
