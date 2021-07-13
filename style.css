@@ -115,7 +115,7 @@ p {
   letter-spacing: -0.0027777778rem;
   line-height: 1.5;
   color: var(--clr-gray);
-  font-size: clamp(1rem, 0.8804rem + 0.589vw, 1.2rem);
+  font-size: clamp(1rem, 0.9566rem + 0.2013vw, 1.1rem);
 }
 
 .section-center {
@@ -215,7 +215,7 @@ p {
   height: auto;
   text-align: left;
   background: var(--clr-lgtest-gray);
-  padding: 100vw 100vh;
+  padding: 100vh 50vw;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
 }
@@ -236,7 +236,7 @@ p {
 }
 
 .nav__item a {
-  font-size: 1.55rem;
+  font-size: clamp(1rem, 0.8915rem + 0.5031vw, 1.25rem);
   color: var(--clr-black);
 }
 
